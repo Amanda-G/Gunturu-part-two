@@ -1,7 +1,10 @@
 
-var vacationType = prompt("What type of vacation would you like to take; musical, tropical, or adventurous?");
+var vacationType = prompt("What type of vacation would you like to take; musical, tropical, or adventurous?").toLocaleLowerCase();
+var groupSize = prompt("How many people will be going on this trip?");
 
 var destination = "";
+var transportation = "";
+
 
 if(vacationType==="musical"){
     destination = "New Orleans.";
@@ -17,10 +20,6 @@ else if (vacationType==="adventurous"){
     destination = "whitewater rafting at the Grand Canyons.";
     document.writeln("Type: adventurous");
 }
-
-var groupSize = prompt("How many people will be going on this trip?");
-
-var transportation = "";
 
 if(groupSize=='1' || groupSize=='2'){
     transportation = "First Class"
